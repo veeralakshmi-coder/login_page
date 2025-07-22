@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/246435105986713.5f85b7c54688d.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.logo-container {
+    position: absolute; /* Position the container relative to the page */
+    top: 70px; /* Adjust the vertical position */
+    left: 43%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container perfectly */
+    background-color: rgba(190, 183, 183, 0.8); /* White background for the box */
+    padding: 3px; /* Add padding inside the box */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.1); /* Optional: Add a subtle shadow */
+    width: 120px; /* Adjust the width of the box */
+    text-align: center; /* Center the logo inside the box */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.logo-container img {
+    width: 75%; /* Make the logo fit the container */
+    height: 45%; /* Maintain the aspect ratio */
+    border-radius: 4px; /* Optional: Add rounded corners to the logo */
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(190, 183, 183, 0.8);
+    box-shadow: 0 0 10px rgb(241, 235, 235);
+
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 32%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+}
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack the form and team contacts vertically */
+        align-items: center;
+    }
+
+    .contact-form,
+    .team-contacts {
+        max-width: 90%; /* Reduce width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem; /* Reduce heading size for very small screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem; /* Adjust input font size */
+    }
+
+    .contact-form button {
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}
